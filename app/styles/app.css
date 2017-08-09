@@ -2,6 +2,13 @@
   display: inline-block;
 }
 
+.post-container {
+  text-align: left;
+  margin: 2rem 0 2rem 5rem;
+  /*padding: 2rem 0 2rem 0;*/
+}
+
 img.post-tile-image {
   max-width: 60%;
+  /*max-height: 10%;*/
 }
