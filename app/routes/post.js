@@ -16,11 +16,6 @@ export default Ember.Route.extend({
       });
       post.save();
       this.transitionTo('index');
-    },
-    delete(post) {
-      if (confirm('Are you sure you want to delete this post?')) {
-        this.sendAction('destroyPost', post);
-      }
     }
   }
 });
