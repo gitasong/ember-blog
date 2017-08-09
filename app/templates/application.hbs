@@ -1,1 +1,22 @@
-{{outlet}}
+<div class= "container">
+  <header class= "jumbotron">
+    <div id="header-container">
+      <span class="nav">
+        <p>{{#link-to 'about'}}About{{/link-to}}</p>
+        <p>{{#link-to 'contact'}}Contact{{/link-to}}</p>
+      </span>
+      <span id="logo-container">
+        <h1>Blog</h1>
+      </span>
+      <span id="search-container">
+        <h4>Search</h4>
+      </span>
+    </div>
+  </header>
+    {{outlet}}
+  <hr>
+  <footer>
+    {{#link-to 'about'}}About{{/link-to}}
+    {{#link-to 'contact'}}Contact{{/link-to}}
+  </footer>
+</div>
