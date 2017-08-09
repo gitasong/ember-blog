@@ -1,1 +1,15 @@
-{{outlet}}
+<div class="container all-posts">
+  <h2>All Posts</h2>
+</div>
+
+<div class="container add-post">
+  <h2>Add A Post</h2>
+  <ul>
+    {{#each model as |post|}}
+      <!-- {*{post-tile post=post}} -->
+      <h3>{{post.title}}</h3>
+      <cite>{{post.author}}</cite>
+      <p>{{post.teaser}}</p>
+    {{/each}}
+  </ul>
+</div>
