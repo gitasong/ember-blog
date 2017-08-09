@@ -1,3 +1,7 @@
 #header-container span {
   display: inline-block;
 }
+
+img.post-image {
+  max-width: 10rem;
+}
