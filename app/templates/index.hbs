@@ -1,11 +1,13 @@
-<div class="container add-post">
-  <h2>Add A Post</h2>
-  {{new-post savePost="savePost"}}
-</div>
+<div class="post-container container">
+  <div class="container add-post">
+    <h2>Add A Post</h2>
+    {{new-post savePost="savePost"}}
+  </div>
 
-<div class="container all-posts">
-  <h2>All Posts</h2>
-  {{#each model as |post|}}
-    {{post-tile post=post}}
-  {{/each}}
+  <div class="container all-posts">
+    <h2>All Posts</h2>
+    {{#each model as |post|}}
+      {{post-tile post=post}}
+    {{/each}}
+  </div>
 </div>
