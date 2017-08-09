@@ -1,8 +1,14 @@
 <li>
-  {{#link-to 'post' post.id}}
-    <h3>{{post.title}}</h3>
-  {{/link-to}}
-  <p><cite>{{post.author}}</cite></p>
-  <img src="{{post.image}}" class="post-tile-image" alt="{{post.title}}" />
-  <p>{{post.teaser}}</p>
+  <div class="row">
+    <div class="col-md-5 offset-md-1 post-image">
+      <img src="{{post.image}}" class="post-tile-image" alt="{{post.title}}" />
+    </div>
+    <div class="col-md-5 offset-md-1 post-body">
+      {{#link-to 'post' post.id}}
+        <h3>{{post.title}}</h3>
+      {{/link-to}}
+      <p><cite>{{post.author}}</cite></p>
+      <p>{{post.teaser}}</p>
+    </div>
+  </div>
 </li>
