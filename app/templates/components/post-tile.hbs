@@ -1,6 +1,7 @@
 <li>
-  {{log 'Post is:' post}}
-  <h3>{{post.title}}</h3>
+  {{#link-to 'rental' rental.id}}
+    <h3>{{post.title}}</h3>
+  {{/link-to}}
   <p><cite>{{post.author}}</cite></p>
   <img src="{{post.image}}" class="post-image" alt="{{post.title}}" />
   <p>{{post.teaser}}</p>
