@@ -14,7 +14,7 @@ export default Ember.Route.extend({
       post.save();
       this.transitionTo('index');
     },
-    destroyPost(rental) {
+    destroyPost(post) {
       post.destroyRecord();
       this.transitionTo('index');
     }
