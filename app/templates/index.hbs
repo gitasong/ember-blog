@@ -1,10 +1,10 @@
-<div class="post-container container">
-  <div class="container add-post">
+<div class="main-container container">
+  <div class="add-post">
     <h2>Add A Post</h2>
     {{new-post savePost="savePost"}}
   </div>
 
-  <div class="container all-posts">
+  <div class="all-posts">
     <h2>All Posts</h2>
     {{#each model as |post|}}
       {{post-tile post=post}}
