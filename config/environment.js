@@ -2,7 +2,7 @@
 
 module.exports = function(environment) {
   var ENV = {
-    modulePrefix: 'blog',
+    modulePrefix: 'super-rentals',  # This will differ depending on what you named YOUR app.
     environment: environment,
     rootURL: '/',
     locationType: 'auto',
@@ -10,11 +10,14 @@ module.exports = function(environment) {
       FEATURES: {
         // Here you can enable experimental features on an ember canary build
         // e.g. 'with-controller': true
-      },
-      EXTEND_PROTOTYPES: {
-        // Prevent Ember Data from overriding Date.parse.
-        Date: false
       }
+    },
+
+    firebase: {
+      apiKey: 'AIzaSyDY0_y6dyOk9tTnX2RweRWfwew2kCVQwQc',
+      authDomain: 'blog-e97d0.firebaseapp.com',
+      databaseURL: 'https://blog-e97d0.firebaseio.com',
+      storageBucket: ''
     },
 
     APP: {
