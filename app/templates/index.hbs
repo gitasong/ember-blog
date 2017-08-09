@@ -5,9 +5,7 @@
 
 <div class="container all-posts">
   <h2>All Posts</h2>
-  <ul>
-    {{#each model as |post|}}
-      {{post-tile post=post}}
-    {{/each}}
-  </ul>
+  {{#each model as |post|}}
+    {{post-tile post=post}}
+  {{/each}}
 </div>
