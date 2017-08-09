@@ -1,5 +1,10 @@
+#header-container {
+  text-align: center;
+}
+
 #header-container span {
   display: inline-block;
+  margin: 10rem;
 }
 
 .main-container {
