@@ -4,6 +4,12 @@ export default Ember.Route.extend({
   model(params) {
     return this.store.findRecord('post', params.post_id);
   },
+  // model() {
+  //   return Ember.RSVP.hash({
+  //     posts: this.store.findAll('post'),
+  //     comments: this.store.findRecord('post', params.post_id)
+  //   });
+  // },
   actions: {
     update(post, params) {
       Object.keys(params).forEach(function(key) {
