@@ -6,5 +6,5 @@ export default DS.Model.extend({
   image: DS.attr(),
   teaser: DS.attr(),
   fulltext: DS.attr(),
-  comments: DS.hasMany('review', { async: true })
+  comments: DS.hasMany('comment', { async: true })
 });
