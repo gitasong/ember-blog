@@ -4,3 +4,8 @@
 <p>{{post.fulltext}}</p>
 
 <button {{action 'delete' post}}>Delete</button>
+
+<h2>Comments</h2>
+{{#each post.comments as |comment|}}
+  {{comment-tile comment=comment}}  <!-- needs destroyComment="destroyComment" -->
+{{/each}}
