@@ -13,7 +13,7 @@ export default Ember.Component.extend({
         username: this.get('username')
       };
       this.set('addNewComment', false);
-      this.sendAction('saveReview', params);
+      this.sendAction('saveComment', params);
     }
   }
 });
