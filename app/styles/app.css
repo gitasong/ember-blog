@@ -17,7 +17,7 @@
 
 .main-container {
   text-align: left;
-  margin-left: 20rem;
+  margin-left: 15%;
 }
 
 .row.post-tile {
@@ -39,6 +39,10 @@ img.post-tile-image {
 
 .post-body h3 {
   margin-top: 0;
+}
+
+.fulltext {
+  margin-right: 15%;
 }
 
 footer.jumbotron {
