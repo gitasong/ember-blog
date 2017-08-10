@@ -3,7 +3,7 @@
 <img src="{{post.image}}" class="post-detail-image" alt="{{post.title}}" />
 <p>{{post.fulltext}}</p>
 
-<button {{action 'delete' post}}>Delete</button>
+<button {{action 'delete' post}}>Delete Post</button>
 
 <h2>Comments</h2>
 {{#each post.comments as |comment|}}
