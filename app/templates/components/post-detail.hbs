@@ -9,5 +9,5 @@
 
 <h2>Comments</h2>
 {{#each post.comments as |comment|}}
-  {{comment-tile comment=comment destroyComment="destroyComment"}}
+  {{comment-tile comment=comment update="update" destroyComment="destroyComment"}}
 {{/each}}
