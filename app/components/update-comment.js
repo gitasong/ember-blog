@@ -11,6 +11,7 @@ export default Ember.Component.extend({
         title: this.get('title'),
         body: this.get('body'),
         username: this.get('username'),
+        post: this.get('post'),
       };
       this.set('updateCommentForm', false);
       this.sendAction('update', comment, params);
