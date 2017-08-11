@@ -1,1 +1,25 @@
-{{yield}}
+{{#if updateCommentForm}}
+  <h4>Update Comment: "{{comment.title}}"</h4>
+  <div>
+    <form>
+      <div class="form-group">
+        <label for="title">Title</label>
+        {{input value=title id="title" placeholder=comment.title}}
+      </div>
+
+      <div class="form-group">
+        <label for="body">Body</label>
+        {{input value=body id="body" placeholder=comment.body}}
+      </div>
+
+      <div class="form-group">
+        <label for="username">Username</label>
+        {{input value=username id="username" placeholder=comment.username}}
+      </div>
+
+      <button {{action 'update' comment}}>Save Comment</button>
+    </form>
+  </div>
+{{else}}
+  <button {{action 'updateCommentForm'}}>Update Comment</button>
+{{/if}}
