@@ -1,3 +1,11 @@
+.container-fluid {
+  padding: 0;
+}
+
+.jumbotron {
+  max-height: 20%;
+}
+
 #header-container {
   text-align: center;
 }
@@ -9,9 +17,7 @@
 
 .main-container {
   text-align: left;
-  margin-left: 5rem;
-  /*margin: 2rem 0 2rem 5rem;*/
-  /*padding: 2rem 0 2rem 0;*/
+  margin-left: 15%;
 }
 
 .row.post-tile {
@@ -33,4 +39,12 @@ img.post-tile-image {
 
 .post-body h3 {
   margin-top: 0;
+}
+
+.fulltext {
+  margin-right: 15%;
+}
+
+footer.jumbotron {
+  text-align: center;
 }

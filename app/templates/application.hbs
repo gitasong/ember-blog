@@ -1,7 +1,8 @@
 <div class= "container-fluid">
-  <header class= "jumbotron">
+  <header class= "jumbotron container-fluid">
     <div id="header-container">
       <span class="nav">
+        <p>{{#link-to 'index'}}Home{{/link-to}}</p>
         <p>{{#link-to 'about'}}About{{/link-to}}</p>
         <p>{{#link-to 'contact'}}Contact{{/link-to}}</p>
       </span>
@@ -13,10 +14,13 @@
       </span>
     </div>
   </header>
+  <div class="main-container">
     {{outlet}}
+  </div>
   <hr>
-  <footer>
-    <!-- {*{#link-to 'about'}}About{*{/link-to}}
-    {*{#link-to 'contact'}}Contact{*{/link-to}} -->
+  <footer class=jumbotron>
+    {{#link-to 'index'}}Home{{/link-to}} |
+    {{#link-to 'about'}}About{{/link-to}} |
+    {{#link-to 'contact'}}Contact{{/link-to}}
   </footer>
 </div>
