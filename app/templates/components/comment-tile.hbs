@@ -2,4 +2,5 @@
 <p>{{comment.body}}</p>
 <cite>by {{comment.username}}</cite><br>
 
+{{update-comment comment=comment update="update"}}
 <button {{action 'delete' comment}}>Delete Comment</button>
